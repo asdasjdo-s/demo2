@@ -1,0 +1,18 @@
+directories:
+  output: dist
+  buildResources: assets
+appId: com.stonebracelet.app
+productName: 养了个石头
+files:
+  - filter:
+      - dist/**/*
+      - public/electron.js
+      - node_modules/**/*
+      - package.json
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - portable
+electronVersion: 27.3.11
